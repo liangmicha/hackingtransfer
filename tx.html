@@ -34,7 +34,7 @@
 				<h4>D/C Summary</h4>
 			</div>
 			<div class="options">
-				<button class="import_ehr btn btn-sm align-middle btn-outline-secondary" type="button">Import from EHR</button>
+				<button id="import_ehr" class="btn btn-sm align-middle btn-outline-secondary" type="button">Import from EHR</button>
 			</div>
 		</div>
 
@@ -57,21 +57,24 @@
 				<h4>Labs</h4>
 			</div>
 			<div class="options">
-		  		<label class="checkbox-inline" id="labs_24"><input type="checkbox" value="">Last 24 hrs</label>
-				<label class="checkbox-inline" id="labs_48"><input type="checkbox" value="">Last 48 hrs</label>
+		  		<label class="radio-inline" id="labs_24"><input type="radio" value="">Last 24 hrs</label>
+				<label class="radio-inline" id="labs_48"><input type="radio" value="">Last 48 hrs</label>
 		  </div>
 		</div>	
 
 		<div class="form-group">
 		  	<div class="inline-group">
 				<a class="images_check_image" ><img class="checkmark" src="checkmark.png"> </a>
-				<h4>Labs</h4>
+				<h4>Images</h4>
 			</div>
 			<div class="options">
-		  		<label class="checkbox-inline" id="images_24"><input type="checkbox" value="">Last 24 hrs</label>
-				<label class="checkbox-inline" id="images_48"><input type="checkbox" value="">Last 48 hrs</label>
+		  		<label class="radio-inline" id="images_24"><input type="radio" value="">Last 24 hrs</label>
+				<label class="radio-inline" id="images_48"><input type="radio" value="">Last 48 hrs</label>
 		  </div>
 		</div>	
+
+		<button class="btn btn-outline-success" type="button">Submit</button>
+
 	</div>
 
 

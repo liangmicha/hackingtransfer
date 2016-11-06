@@ -2,7 +2,7 @@ $(document).ready(function() {
   console.log("blah");
 
 
-    $('.import_ehr').click(function() {
+    $('#import_ehr').click(function() {
     $('.dc_check_image').show();
 
 
