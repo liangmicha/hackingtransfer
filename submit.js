@@ -12,8 +12,10 @@ $(document).ready(function() {
       },
       crossDomain: true
     }).done(function() {
+      window.location = "confirm.html";
       console.log("AJAX POST request is finished.");
     }).fail(function() {
+      window.location = "confirm.html";
       console.log("AJAX POST request failed :(");
     });
   });
