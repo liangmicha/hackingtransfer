@@ -11,7 +11,7 @@ app.get('/checkmark.png', function(req, res) {
     res.sendFile(__dirname + '/checkmark.png');
 });
 
-app.get('/check-xray.jpg', function(req, res) {
+app.get('/chest-xray.jpg', function(req, res) {
     res.sendFile(__dirname + '/chest-xray.jpg');
 });
 
