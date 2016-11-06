@@ -69,5 +69,5 @@ app.get('/reception', function(req, res) {
     console.log(id);
 });
 
-app_new = app.listen();
+app_new = app.listen(process.env.PORT);
 //console.log("Server Running on ", PORT);
