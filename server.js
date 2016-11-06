@@ -49,8 +49,8 @@ app.get('/receiving.html', function(req, res) {
 });
 
 // css files
-app.get('/tx.css', function(req, res) {
-    res.sendFile(__dirname + '/tx.css');
+app.get('/tx2.css', function(req, res) {
+    res.sendFile(__dirname + '/tx2.css');
 });
 
 app.get('/receiving.css', function(req, res) {
