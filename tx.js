@@ -3,8 +3,20 @@ $(document).ready(function() {
   $('.import_ehr').click(function() {
     $('.dc_check_image').show();
     $('.import_ehr').addClass('button-press');
+    
   });
 
+
+  $('.btn-dc').click(function(){
+  	$('.ouput-dc').show();
+  })
+  $('.btn-med').click(function(){
+  	$('.ouput-med').show();
+  })
+
+  $('.btn-lab').click(function(){
+  	$('.ouput-lab').show();
+  })
 
   // $('.labs-wrapper').click(function() {
   //   $('.labs-graph').show();
