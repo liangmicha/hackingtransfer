@@ -7,8 +7,10 @@
 	<!-- Styling Sheets -->
 	<link rel="stylesheet" type="text/css" href="tx.css">
 	<link rel="stylesheet" type="text/css" href="bootstrap.css">
+
+
 	<script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.1.1.min.js"></script>
-  <script src="submit.js"></script>
+  	<script src="submit.js"></script>
 	<script src="tx.js"></script>
 </head>
 
@@ -17,25 +19,33 @@
 
 
 	<div class="top">
-		<ul class="top-inline">
-		<il class="top_image">
+		<div class="top_box">
 			<a class="image" ><img src="patient_icon.jpg"> </a>
-		</il>
-	    <il class="patient_icon">
-		    <h2 id="patient_name"> PATIENT JOHN SMITH</h1>
-		    <h4 id="info">GENDER | AGE</h3>
-	    </il>
-	    </ul>
+		</div>
+		
+	    <div class="top_box patient_info">
+
+	    	<h2 id="patient_name"> PATIENT JOHN SMITH</h2>
+		    <h4 id="info">GENDER</h4> 
+		    <h4 id="info"> | AGE</h4> 
+		</div>
 	</div>
 
 	<div class="bottom">
 		<div class="form-group">
-			<div class="inline-group">
-				<a class="dc_check_image" ><img class="checkmark" src="checkmark.png"> </a>
-				<h4>D/C Summary</h4>
-			</div>
+			<div class="inline-group"><a><img class="checkmark dc_check_image" src="checkmark.png"> </a> </div>
+			<div class="inline-group">	<h4>D/C Summary</h4></div>
+
 			<div class="options">
-				<button id="import_ehr" class="btn btn-sm align-middle btn-outline-secondary" type="button">Import from EHR</button>
+				<button class="btn btn-sm align-middle btn-outline-secondary import_ehr" type="button">Import from EHR</button>
+			</div>
+
+			<div class="imported_dc_info">
+				<p>test D/C summary
+					....
+					...
+					....
+				</p>
 			</div>
 		</div>
 
@@ -58,7 +68,7 @@
 				<h4>Labs</h4>
 			</div>
 			<div class="options">
-		  		<label class="radio-inline" id="labs_24"><input type="radio" value="">Last 24 hrs</label>
+		  		<label class="radio-inline" id="labs_24"><input type="radio" value="true">Last 24 hrs</label>
 				<label class="radio-inline" id="labs_48"><input type="radio" value="">Last 48 hrs</label>
 		  </div>
 		</div>
@@ -69,7 +79,7 @@
 				<h4>Images</h4>
 			</div>
 			<div class="options">
-		  		<label class="radio-inline" id="images_24"><input type="radio" value="">Last 24 hrs</label>
+		  		<label class="radio-inline" id="images_24"><input type="radio" value="true">Last 24 hrs</label>
 				<label class="radio-inline" id="images_48"><input type="radio" value="">Last 48 hrs</label>
 		  </div>
 		</div>

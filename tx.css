@@ -1,28 +1,39 @@
 .top {
   width: 100%;
-  height: 100px;
+  height: 30%;
   border-bottom: 1px black solid;
-  text-align: center;
-  display:inline;
+  text-align: bottom;
 }
-#top-inline {
+
+.top_box {
+	display:inline-block;
+	margin:auto;
+}
+
+
+#info{
 	display:inline;
 }
 
 .bottom {
-	margin-left: 20px;
+	margin-left: 2%;
 }
 
 .options {
-	margin-left: 20px;
+	margin-left: 5%;
 }
 
 .inline-group{
-	display:inline;
+	display:inline-block;
+	margin:1%;
 }
 
-.dc_check_image {
+.dc_check_image  {
   display: none;
+}
+
+.button-press {
+	background-color: lightgreen;
 }
 
 .checkmark {
