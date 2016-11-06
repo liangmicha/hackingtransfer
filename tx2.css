@@ -143,6 +143,7 @@ button.submit-button {
   background-color: #F5A352;
   border-left: 1px solid black;
   cursor: pointer;
+  
 }
 
 
@@ -163,9 +164,22 @@ button.submit-button {
   width: 200px;
 }
 
-.bottom-item {
-  height: 100%;
+h4 {
+    font-size: 150%!important;
 }
+.bottom-item {
+    height: 100%;
+    padding-left: 0px;
+    padding-right: 0px;
+    padding: 0px!important;
+    margin: 0px!important;
+}
+
+.nopadding {
+   padding: 0 !important;
+   margin: 0 !important;
+}
+
 .color-change {
   background-color: #F5A352;
   cursor: pointer;
@@ -224,6 +238,10 @@ button.submit-button {
   display: inline;
 }
 
+.bottom-no-padding {
+    padding-left: 0px;
+    padding-right: 0px;
+}
 
 .table-header {
     /* text-align: right; */
