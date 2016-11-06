@@ -33,6 +33,12 @@ app.get('/patient_icon.jpg', function(req, res) {
 
 // html files
 app.get('/confirm.html', function(req, res) {
+    url = req.protocol + '://' + req.get('host') + '/receiving.html';
+    var c = new tmclient('mainakchowdhury', 'DgqCit7iyRXCAnb0A6niGthgLQgLuU');
+    c.Messages.send({text: url, phones:'19492943766'}, function(err, res){
+       console.log('Messages.send()', err, res);
+    });
+
     res.sendFile(__dirname + '/confirm.html');
 });
 
@@ -80,15 +86,7 @@ app.get('/', function(req, res) {
     res.sendFile(__dirname + '/tx2.html');
 });
 
-
-
 app.post('/api', function(req, res) {
-    var patientid = req.body.id;
-    url = req.protocol + '://' + req.get('host') + '/receiving.html';
-    var c = new tmclient('mainakchowdhury', 'DgqCit7iyRXCAnb0A6niGthgLQgLuU');
-    c.Messages.send({text: url, phones:'19492943766'}, function(err, res){
-       console.log('Messages.send()', err, res);
-    });
     res.send(url);
 });
 
