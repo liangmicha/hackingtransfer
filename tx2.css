@@ -168,3 +168,29 @@ button.submit-button {
   background-color: #F5A352;
   cursor: pointer;
 }
+
+.output-dc-check-wrapper {
+  position: absolute;
+  top: 50px;
+  right: 50px;
+}
+
+.checkbox-icon {
+  display: none;
+}
+
+.check-dc {
+  height: 200px;
+  width: 200px;
+}
+
+.output-medications-check-wrapper {
+  position: absolute;
+  left: 50px;
+  bottom: 50px;
+}
+
+.check-dc-small {
+  height: 100px;
+  width: 100px;
+}

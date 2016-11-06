@@ -1,10 +1,10 @@
 $(document).ready(function() {
-
+  var count = 0;
 
   $('.color-change').click(function() {
     $(this).css('background-color', '#79BFA1');
+    $(this).find('.checkbox-icon').show();
   })
-
 
   $('.import-button').click(function(){
   	$('.output-dc').show();
