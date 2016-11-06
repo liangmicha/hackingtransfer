@@ -2,7 +2,8 @@ $(document).ready(function() {
   var count = 0;
 
   $('.color-change').click(function() {
-    $(this).css('background-color', '#006600');
+      $(this).css('background-color', '#006600');
+    $(this).css('color', '#FFFFFF');      
     $(this).find('.checkbox-icon').show();
     count = count + 1;
     console.log(count);
