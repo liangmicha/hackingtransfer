@@ -2,8 +2,13 @@ $(document).ready(function() {
   var count = 0;
 
   $('.color-change').click(function() {
-    $(this).css('background-color', '#79BFA1');
+    $(this).css('background-color', '#006600');
     $(this).find('.checkbox-icon').show();
+    count = count + 1;
+    console.log(count);
+    if (count >= 4) {
+      $('.submit-button').css('background-color', '#006600')
+    }
   })
 
   $('.import-button').click(function(){

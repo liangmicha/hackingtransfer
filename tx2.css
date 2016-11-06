@@ -119,9 +119,10 @@ span.tags
 
 button.import-button {
   width: 300px;
-  margin-top: 25px;
+  margin-top: 20px;
+  margin-bottom: 20px;
   margin-left: 70px;
-  height: 80px;
+  height: 70px;
   font-size: 30px;
   border-radius: 25px;
 }
@@ -133,6 +134,7 @@ button.submit-button {
   height: 80px;
   font-size: 30px;
   border-radius: 25px;
+  background-color: #993333;
 }
 
 .dc-section {
@@ -193,4 +195,13 @@ button.submit-button {
 .check-dc-small {
   height: 100px;
   width: 100px;
+}
+
+.patient-icon {
+  height: 100%;
+  margin-top: 5px;
+}
+
+.transferring-from {
+  font-size: 30px;
 }
