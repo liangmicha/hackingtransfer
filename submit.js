@@ -3,9 +3,10 @@ $(document).ready(function() {
   $('.btn-outline-success').click(function() {
     console.log("button clicked");
     $.ajax({
-      url: "https://localhost:3772/api",
+      url: "http://localhost:3772/api",
       type: "POST",
-      data: {id: 1},
+      data: JSON.stringify({"id": 1}),
+      //dataType: "json",
       headers: {
         'Content-Type': 'application/json',
       },

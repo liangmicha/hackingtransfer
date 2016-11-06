@@ -1,0 +1,8 @@
+{
+  "name": "Ready to receive",
+  "description": "Simplifying safe patient discharge and transfer",
+  "repository": "https://github.com/liangmicha/hackingtransfer",
+  "logo": "http://node-js-sample.herokuapp.com/node.svg",
+  "keywords": ["node", "express"],
+  "image": "heroku/nodejs"
+}
