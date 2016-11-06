@@ -232,3 +232,7 @@ button.submit-button {
 .drug {
     height: 40px;
 }
+
+.buttons-item {
+    margin-top: 10px;
+}
