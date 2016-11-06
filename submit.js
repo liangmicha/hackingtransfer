@@ -1,6 +1,6 @@
 $(document).ready(function() {
   console.log("oman");
-  $('.btn-outline-success').click(function() {
+  $('.submit-button').click(function() {
     console.log("button clicked");
     $.ajax({
       url: "http://localhost:3772/api",
