@@ -219,3 +219,17 @@ button.submit-button {
 .output-surgeon {
   font-size: 50px;
 }
+
+.drug-text {
+  display: inline;
+}
+
+
+.table-header {
+    /* text-align: right; */
+    /* margin-right: 20px; */
+}
+
+.drug {
+    height: 40px;
+}
