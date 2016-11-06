@@ -1,8 +1,9 @@
 $(document).ready(function() {
-  $('.import_ehr').click(function() {
 
 
-  });
+  $('.color-change').click(function() {
+    $(this).css('background-color', '#79BFA1');
+  })
 
 
   $('.import-button').click(function(){

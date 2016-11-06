@@ -3,9 +3,9 @@ var app = express();
 var bodyParser = require('body-parser');
 var tmclient = require('textmagic-rest-client');
 //app.use(express.static(__dirname + '/'));
-app.use(bodyParser.urlencoded({ extended: false })); 
+app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json()); // Body parser use JSON data
-  
+
 app.get('/checkmark.png', function(req, res) {
     res.sendFile(__dirname + '/checkmark.png');
 });
@@ -56,9 +56,9 @@ app.post('/api', function(req, res) {
     var patientid = req.body.id;
     url = req.protocol + '://' + req.get('host') + '/reception' + '?id=' + patientid;
     var c = new tmclient('mainakchowdhury', 'DgqCit7iyRXCAnb0A6niGthgLQgLuU');
-    //c.Messages.send({text: url, phones:'16507984232'}, function(err, res){
-    //    console.log('Messages.send()', err, res);
-    //});
+    c.Messages.send({text: url, phones:'16502384531'}, function(err, res){
+       console.log('Messages.send()', err, res);
+    });
     console.log(url);
     res.send(url);
 });

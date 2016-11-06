@@ -109,7 +109,8 @@ span.tags
 
 
 .output-dc {
-	display:none;
+	display: none;
+  text-align: left;
 }
 
 .output-med {
@@ -135,7 +136,11 @@ button.submit-button {
 }
 
 .dc-section {
-  height: 300px;
+  margin-bottom: 20px;
+  height: 500px;
+  background-color: #F5A352;
+  border-left: 1px solid black;
+  cursor: pointer;
 }
 
 
@@ -154,4 +159,12 @@ button.submit-button {
 .xrayimage {
   height: 200px;
   width: 200px;
+}
+
+.bottom-item {
+  height: 100%;
+}
+.color-change {
+  background-color: #F5A352;
+  cursor: pointer;
 }
