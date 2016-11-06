@@ -7,8 +7,12 @@
 	<!-- Styling Sheets -->
 	<link rel="stylesheet" type="text/css" href="receiving.css">
 	<link rel="stylesheet" type="text/css" href="bootstrap.css">
-    <link href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css" rel="stylesheet">
+	<link href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css" rel="stylesheet">
 	<script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.1.1.min.js"></script>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.11.2/js/bootstrap-select.min.js"> </script>
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.11.2/css/bootstrap-select.min.css">
 
 </head>
 
@@ -16,78 +20,75 @@
 <body>
 	<div class="container">
 		<div class="row">
-	    <div class="col-sm-12 top">
+			<div class="col-sm-12 top">
 	        <div class="col-xs-12 col-sm-4">
 	            <h3>Patient: Stephanie Lau</h3>
-							<img src="patient_icon.jpg" alt="" class="img-circle img-responsive"> </img>
 	            <p><strong>Gender: </strong> Male </p>
 	            <p><strong>Age: </strong> 67</p>
+							<p><strong>DOB: May 5th 1949 </strong> </p>
 	        </div>
-					<div class="col-xs-12 divider text-center physician-section">
-						<div class="col-xs-12 emphasis">
-								<h4><strong>Transferring Physician Contact</strong></h4>
-
-									<p> Attending Surgeon - Dr. Joseph Hui: 650 238 1219</p
-									<p> From: <b> Bwindi Community Hospital </b> </b>
-
-						</div>
-					</div>
-
-
-
+	        <div class="col-xs-12 col-sm-4 text-center">
+	            <div class="patient-photo-wrapper">
+	                <img src="elderly-woman.png" alt="" class="patient-icon"> </img>
+	            </div>
+	        </div>
 	    </div>
-			<!-- D/C Summary -->
-			<div class="col-xs-12 divider text-center dc-section">
-				<div class="col-xs-12 emphasis">
-						<h4><strong>D/C Summary</strong></h4>
-						<div class="output-dc">
-						  <p> TEST Test Test Test Test Test Test D/C </p>
-						</div>
+		</div>
+  	<p>Transferred From <strong> Santa Clara Community Hospital </strong> </p>
+	  <div class="panel-group" id="accordion">
+	    <div class="panel panel-default">
+	      <div class="panel-heading">
+	        <h4 class="panel-title">
+	          <a data-toggle="collapse" data-parent="#accordion" href="#collapse1">Discharge Summary</a>
+	        </h4>
+	      </div>
+	      <div id="collapse1" class="panel-collapse collapse in">
+	        <div class="panel-body">Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+	        sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+	        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</div>
+	      </div>
+	    </div>
+	    <div class="panel panel-default">
+	      <div class="panel-heading">
+	        <h4 class="panel-title">
+	          <a data-toggle="collapse" data-parent="#accordion" href="#collapse2">Discharge Medications</a>
+	        </h4>
+	      </div>
+	      <div id="collapse2" class="panel-collapse collapse">
+	        <div class="panel-body">
+						Aspirin 821 mg PO QD <br />
+						Atorvastatin 80 mg PO QHS <br />
+						Oxycodone 5 mg PO QHH <br />
+						Ailandid IV <b> discontinued </b> <br />
+					</div>
+	      </div>
+	    </div>
+	    <div class="panel panel-default">
+	      <div class="panel-heading">
+	        <h4 class="panel-title">
+	          <a data-toggle="collapse" data-parent="#accordion" href="#collapse3">Labs</a>
+	        </h4>
+	      </div>
+	      <div id="collapse3" class="panel-collapse collapse">
+	        <div class="panel-body">
+						<iframe width="100%" height="400" frameborder="0" scrolling="no" src="https://plot.ly/~liangmicha/3.embed"></iframe>
+					</div>
+	      </div>
+	    </div>
+			<div class="panel panel-default">
+				<div class="panel-heading">
+					<h4 class="panel-title">
+						<a data-toggle="collapse" data-parent="#accordion" href="#collapse4"> Imaging </a>
+					</h4>
+				</div>
+				<div id="collapse4" class="panel-collapse collapse">
+					<div class="panel-body">
+						<p><small>Chest xray</small></p>
+						<img class="xrayimage" src="chest-xray.jpg"> </img>
+					</div>
 				</div>
 			</div>
-	    <!-- bottom -->
-	    <div class="col-xs-12 divider text-center bottom-part">
-
-		    <!-- Medications -->
-		    <div class="col-xs-12 col-sm-4 emphasis">
-		        <h4><strong>Medications</strong></h4>
-
-		         <div class="output-med">
-		         <p>
-		            <ul>
-		            <li> Aspirin 821 mg PO QD </li>
-		            <li> Atorvastatin 80 mg PO QHS</li>
-		            <li> Oxycodone 5 mg PO QHH </li>
-		            </ul>
-		        </p>
-		        </div>
-		    </div>
-
-
-		                <!-- Labs -->
-		    <div class="col-xs-12 col-sm-4 emphasis">
-		        <h4><strong>Labs</strong></h4>
-		        <p><small>CBC, BMPs, etc.</small></p>
-		        <div class="output-lab">
-		            <p> TEST Test Test </p>
-		            <p> TEST</p>
-		        </div>
-		    </div>
-
-
-				<div class="col-xs-12 col-sm-4 emphasis">
-		        <h4><strong>Images</strong></h4>
-		        <div class="output-lab-on">
-							<p><small>Chest xray</small></p>
-		          <img class="xrayimage" src="chest-xray.jpg"> </img>
-		        </div>
-		    </div>
-
-				<iframe width="900" height="800" frameborder="0" scrolling="no" src="https://plot.ly/~liangmicha/3.embed"></iframe>
-
-	    </div> <!-- End bottom -->
-
-		</div>
+	  </div>
 	</div>
 
 

@@ -69,9 +69,8 @@ span.tags
 
  .top {
   width: 100%;
-  height: 400px;
+  height: 180px;
   padding-bottom: 10px;
-  border-bottom: 1px black solid;
   text-align: bottom;
 }
 
@@ -109,7 +108,8 @@ span.tags
 
 
 .output-dc {
-	display:none;
+	display: none;
+  text-align: left;
 }
 
 .output-med {
@@ -118,9 +118,10 @@ span.tags
 
 button.import-button {
   width: 300px;
-  margin-top: 25px;
+  margin-top: 20px;
+  margin-bottom: 20px;
   margin-left: 70px;
-  height: 80px;
+  height: 70px;
   font-size: 30px;
   border-radius: 25px;
 }
@@ -132,10 +133,15 @@ button.submit-button {
   height: 80px;
   font-size: 30px;
   border-radius: 25px;
+  background-color: #993333;
 }
 
 .dc-section {
-  height: 300px;
+  margin-bottom: 20px;
+  height: 500px;
+  background-color: #F5A352;
+  border-left: 1px solid black;
+  cursor: pointer;
 }
 
 
@@ -154,4 +160,75 @@ button.submit-button {
 .xrayimage {
   height: 200px;
   width: 200px;
+}
+
+.bottom-item {
+  height: 100%;
+}
+.color-change {
+  background-color: #F5A352;
+  cursor: pointer;
+}
+
+.output-dc-check-wrapper {
+  position: absolute;
+  top: 50px;
+  right: 50px;
+}
+
+.checkbox-icon {
+  display: none;
+}
+
+.check-dc {
+  height: 200px;
+  width: 200px;
+}
+
+.output-medications-check-wrapper {
+  position: absolute;
+  left: 50px;
+  bottom: 50px;
+}
+
+.check-dc-small {
+  height: 100px;
+  width: 100px;
+}
+
+.patient-icon {
+  height: 100%;
+  margin-top: 5px;
+}
+
+.transferring-from {
+  font-size: 30px;
+}
+
+.select-rx-wrapper {
+  margin-top: 30px;
+}
+
+.select-picker-wrapper {
+  width: 401px;
+  height: 80px;
+  font-size: 30px;
+}
+
+.output-surgeon {
+  font-size: 50px;
+}
+
+.drug-text {
+  display: inline;
+}
+
+
+.table-header {
+    /* text-align: right; */
+    /* margin-right: 20px; */
+}
+
+.drug {
+    height: 40px;
 }

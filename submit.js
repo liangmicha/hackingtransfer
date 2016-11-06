@@ -1,5 +1,4 @@
 $(document).ready(function() {
-  console.log("oman");
   $('.submit-button').click(function() {
     console.log("button clicked");
     $.ajax({
