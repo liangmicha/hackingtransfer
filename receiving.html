@@ -1,34 +1,103 @@
 <html>
 
 <head>
-<link rel="stylesheet" type="text/css" href="receiving.css">
-<script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.1.1.min.js"></script>
-<script src="receiving.js"></script>
+	<title>Receiving Page</title>
+
+
+	<!-- Styling Sheets -->
+	<link rel="stylesheet" type="text/css" href="receiving.css">
+	<link rel="stylesheet" type="text/css" href="bootstrap.css">
+    <link href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css" rel="stylesheet">
+	<script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.1.1.min.js"></script>
+
 </head>
 
-<body>
 
-<div class="top"> Top stuff </div>
-<div class="bottom">
-  <div class="bottom-title"> Summary of discharge sent from Bwindi Community Hospital </div>
-  <div class="data-item discharge-summary-wrapper">
-      <div class="discharge-summary-header"> Show doctor notes </div>
-      <div class="discharge-summary-text"> Patient X came and had a surgeyr done here and other things also happend </div>
-  </div>
-  <div class="data-item medication"> Medication </div>
-  <div class="data-item labs-wrapper">
-    <div class="labs-header"> Labs </div>
-    <div class="labs-graph">
-      <iframe width="900" height="800" frameborder="0" scrolling="no" src="https://plot.ly/~liangmicha/3.embed"></iframe>
-    </div>
-  </div>
-  <div class="data-item imaging"> Imaging </div>
-</div>
+<body>
+	<div class="container">
+		<div class="row">
+	    <div class="col-sm-12 top">
+	        <div class="col-xs-12 col-sm-4">
+	            <h3>Patient: Stephanie Lau</h3>
+	            <p><strong>Gender: </strong> Male </p>
+	            <p><strong>Age: </strong> 67</p>
+							<p><strong>DOB: May 5th 1949 </strong> </p>
+	        </div>
+	        <div class="col-xs-12 col-sm-2 text-center">
+	            <figure>
+	                <img src="patient_icon.jpg" alt="" class="img-circle img-responsive">
+	            </figure>
+	        </div>
+
+	    </div>
+
+			<div class="container">
+				<h2>Simple Collapsible</h2>
+				<button type="button" class="btn btn-info" data-toggle="collapse" data-target="#demo">Simple collapsible</button>
+				<div id="demo" class="collapse">
+					Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+					sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+					quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+				</div>
+			</div>
+
+			<!-- D/C Summary -->
+			<div class="col-xs-12 divider text-center dc-section">
+				<div class="col-xs-12 emphasis">
+						<h4><strong>D/C Summary</strong></h4>
+
+						<div class="output-dc">
+						  <p> TEST Test Test Test Test Test Test D/C </p>
+						</div>
+				</div>
+			</div>
+	    <!-- bottom -->
+	    <div class="col-xs-12 divider text-center bottom-part">
+
+		    <!-- Medications -->
+		    <div class="col-xs-12 col-sm-4 emphasis">
+		        <h4><strong>Medications</strong></h4>
+
+		         <div class="output-med">
+		         <p>
+		            <ul>
+		            <li> Aspirin 821 mg PO QD </li>
+		            <li> Atorvastatin 80 mg PO QHS</li>
+		            <li> Oxycodone 5 mg PO QHH </li>
+		            </ul>
+		        </p>
+		        </div>
+		    </div>
+
+
+		                <!-- Labs -->
+		    <div class="col-xs-12 col-sm-4 emphasis">
+		        <h4><strong>Labs</strong></h4>
+		        <p><small>CBC, BMPs, etc.</small></p>
+		        <div class="output-lab">
+		            <p> TEST Test Test </p>
+		            <p> TEST</p>
+		        </div>
+		    </div>
+
+
+				<div class="col-xs-12 col-sm-4 emphasis">
+		        <h4><strong>Images</strong></h4>
+		        <div class="output-lab-on">
+							<p><small>Chest xray</small></p>
+		          <img class="xrayimage" src="chest-xray.jpg"> </img>
+		        </div>
+		    </div>
+
+				<iframe width="900" height="800" frameborder="0" scrolling="no" src="https://plot.ly/~liangmicha/3.embed"></iframe>
+
+	    </div> <!-- End bottom -->
+
+		</div>
+	</div>
 
 
 </body>
-
-
 
 
 </html>

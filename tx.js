@@ -1,5 +1,4 @@
 $(document).ready(function() {
-
   $('.import_ehr').click(function() {
 
 

@@ -1,25 +1,157 @@
-.top {
+@import url(http://fonts.googleapis.com/css?family=Lato:400,700);
+body
+{
+    font-family: 'Lato', 'sans-serif';
+    }
+.profile
+{
+    min-height: 355px;
+    display: inline-block;
+    }
+
+.divider
+{
+    border-top:1px solid rgba(0,0,0,0.1);
+    }
+.emphasis
+{
+    border-top: 4px solid transparent;
+    }
+.emphasis:hover
+{
+    border-top: 4px solid #1abc9c;
+    }
+.emphasis h2
+{
+    margin-bottom:0;
+    }
+span.tags
+{
+    background: #1abc9c;
+    border-radius: 2px;
+    color: #f5f5f5;
+    font-weight: bold;
+    padding: 2px 4px;
+    }
+.dropdown-menu
+{
+    background-color: #34495e;
+    box-shadow: none;
+    -webkit-box-shadow: none;
+    width: 250px;
+    margin-left: -125px;
+    left: 50%;
+    }
+.dropdown-menu .divider
+{
+    background:none;
+    }
+.dropdown-menu>li>a
+{
+    color:#f5f5f5;
+    }
+.dropup .dropdown-menu
+{
+    margin-bottom:10px;
+    }
+.dropup .dropdown-menu:before
+{
+    content: "";
+    border-top: 10px solid #34495e;
+    border-right: 10px solid transparent;
+    border-left: 10px solid transparent;
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    margin-left: -10px;
+    z-index: 10;
+    }
+
+ .top {
   width: 100%;
-  height: 200px;
+  height: 300px;
+  padding-bottom: 10px;
   border-bottom: 1px black solid;
-  text-align: center;
+  text-align: bottom;
 }
 
-.data-item {
+.top_box {
+	display:inline-block;
+	margin:auto;
+}
+
+
+#info{
+	display:inline;
+}
+
+.bottom {
+	margin-left: 2%;
+}
+
+.options {
+	margin-left: 5%;
+}
+
+.inline-group{
+	display:inline-block;
+	margin:1%;
+}
+
+.dc_check_image  {
+  display: none;
+}
+
+.button-press {
+	background-color: lightgreen;
+}
+
+
+
+.output-dc {
+	display:none;
+}
+
+.output-med {
+	display:none;
+}
+
+button.import-button {
+  width: 300px;
+  margin-top: 25px;
+  margin-left: 70px;
+  height: 80px;
+  font-size: 30px;
+  border-radius: 25px;
+}
+
+button.submit-button {
+  width: 300px;
+  margin-top: 100px;
+  margin-left: 151px;
+  height: 80px;
+  font-size: 30px;
+  border-radius: 25px;
+}
+
+.dc-section {
+  height: 300px;
+}
+
+
+.bottom-part {
+  height: 300px;
+}
+
+.physician-section {
   height: 100px;
 }
 
-.bottom-title {
-  height: 150px;
-  text-align: center;
-  width: 100%;
-  margin-top: 50px;
-}
-
-.discharge-summary-text {
+.output-lab {
   display: none;
 }
 
-.labs-graph {
-  display: none;
+.xrayimage {
+  height: 200px;
+  width: 200px;
 }

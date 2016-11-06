@@ -142,3 +142,16 @@ button.submit-button {
 .bottom-part {
   height: 300px;
 }
+
+.physician-section {
+  height: 100px;
+}
+
+.output-lab {
+  display: none;
+}
+
+.xrayimage {
+  height: 200px;
+  width: 200px;
+}
