@@ -34,7 +34,7 @@ app.get('/patient_icon.jpg', function(req, res) {
 // html files
 app.get('/confirm.html', function(req, res) {
     url = req.protocol + '://' + req.get('host') + '/receiving.html';
-    var c = new tmclient('mainakchowdhury', 'DgqCit7iyRXCAnb0A6niGthgLQgLuU');
+    var c = new tmclient('anjalidatta', 'j78hZTKazcpoJPbCb4JtLsHJwd6Yh2');
     c.Messages.send({text: url, phones:'19492943766'}, function(err, res){
        console.log('Messages.send()', err, res);
     });
