@@ -48,9 +48,9 @@ app.get('/tx2.css', function(req, res) {
 
 app.get('/receiving.html', function(req, res) {
     var num = globalhash[req.query.hash];
-    // c.Messages.send({text: url, phones:num}, function(err, res){
-    //    console.log('Messages.send()', err, res);
-    // });
+    c.Messages.send({text: url, phones:num}, function(err, res){
+       console.log('Messages.send()', err, res);
+    });
  
     console.log('Deleting' + req.query.hash);
     delete globalhash[req.query.hash];
@@ -100,9 +100,9 @@ app.post('/api', function(req, res) {
     url = req.protocol + '://' + req.get('host') + '/receiving.html?hash=' + rnd.toString();
     var c = new tmclient('anjalidatta', 'j78hZTKazcpoJPbCb4JtLsHJwd6Yh2');
     console.log(url);
-    // c.Messages.send({text: url, phones:'19492943766'}, function(err, res){
-    //    console.log('Messages.send()', err, res);
-    // });
+    c.Messages.send({text: url, phones:'19492943766'}, function(err, res){
+       console.log('Messages.send()', err, res);
+    });
     res.send("Hello");
 });
 
