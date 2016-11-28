@@ -4,7 +4,7 @@ $(document).ready(function() {
     $.ajax({
       url: "http://localhost:3772/api",
       type: "POST",
-      data: JSON.stringify({"id": 1}),
+      data: JSON.stringify({"id": document.getElementById("myText").value}),
       //dataType: "json",
       headers: {
         'Content-Type': 'application/json',
