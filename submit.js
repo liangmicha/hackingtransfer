@@ -2,7 +2,7 @@ $(document).ready(function() {
   $('.submit-button').click(function() {
     console.log("button clicked");
     $.ajax({
-      url: "http://localhost:3772/api",
+      url: "https://ready2receive.herokuapp.com/api",
       type: "POST",
       data: JSON.stringify({"id": document.getElementById("myText").value}),
       //dataType: "json",
