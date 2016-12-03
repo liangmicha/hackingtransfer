@@ -47,16 +47,21 @@ app.get('/tx2.css', function(req, res) {
 });
 
 app.get('/receiving.html', function(req, res) {
-    var num = globalhash[req.query.hash];
-    var c = new tmclient('anjalidatta', 'j78hZTKazcpoJPbCb4JtLsHJwd6Yh2');
-    c.Messages.send({text: url, phones:num}, function(err, res){
-       console.log('Messages.send()', err, res);
-    });
+    if (req.query.hash in globashhash) {
+        var num = globalhash[req.query.hash];
+        var c = new tmclient('anjalidatta', 'j78hZTKazcpoJPbCb4JtLsHJwd6Yh2');
+        c.Messages.send({text: url + 'accessed', phones:num}, function(err, res){
+           console.log('Messages.send()', err, res);
+        });
  
-    console.log('Deleting' + req.query.hash);
-    delete globalhash[req.query.hash];
-    console.log(globalhash);
-    res.sendFile(__dirname + '/receiving.html');
+        console.log('Deleting' + req.query.hash);
+        delete globalhash[req.query.hash];
+        console.log(globalhash);
+        res.sendFile(__dirname + '/receiving.html');
+    } else {
+        res.send('Resource not found', 404);
+    }
+
 });
 
 // css files
@@ -84,7 +89,6 @@ app.get('/receiving.js', function(req, res) {
 app.get('/submit.js', function(req, res) {
     res.sendFile(__dirname + '/submit.js');
 });
-
 
 // default route
 app.get('/', function(req, res) {
