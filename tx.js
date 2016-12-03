@@ -19,6 +19,9 @@ $(document).ready(function() {
     $('.output-lab').show();
   });
 
+  $('.radio-inline').click(function(event) {
+    event.stopPropagation();
+  });
   // $('.labs-wrapper').click(function() {
   //   $('.labs-graph').show();
   // });
