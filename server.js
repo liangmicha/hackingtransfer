@@ -50,7 +50,7 @@ app.get('/receiving.html', function(req, res) {
     if (req.query.hash in globashhash) {
         var num = globalhash[req.query.hash];
         var c = new tmclient('anjalidatta', 'j78hZTKazcpoJPbCb4JtLsHJwd6Yh2');
-        c.Messages.send({text: url + 'accessed', phones:num}, function(err, res){
+        c.Messages.send({text: 'Record ' + req.query.hash + ' accessed', phones:num}, function(err, res){
            console.log('Messages.send()', err, res);
         });
  
