@@ -47,7 +47,7 @@ app.get('/tx2.css', function(req, res) {
 });
 
 app.get('/receiving.html', function(req, res) {
-    if (req.query.hash in globashhash) {
+    if (req.query.hash in globalhash) {
         var num = globalhash[req.query.hash];
         var c = new tmclient('anjalidatta', 'j78hZTKazcpoJPbCb4JtLsHJwd6Yh2');
         c.Messages.send({text: 'Record ' + req.query.hash + ' accessed', phones:num}, function(err, res){
