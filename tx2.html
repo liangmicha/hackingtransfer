@@ -10,10 +10,11 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.11.2/js/bootstrap-select.min.js"> </script>
-  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.11.2/css/bootstrap-select.min.css">
+	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.11.2/css/bootstrap-select.min.css">
 
-  	<script src="submit.js"></script>
 	<script src="tx.js"></script>
+    	<script src="submit.js"></script>
+	
 </head>
 
 
@@ -59,7 +60,7 @@
 				</select>
 			</div>
 			<!-- D/C Summary -->
-			<div class="col-xs-12 divider text-center dc-section color-change">
+			<div class="col-xs-12 divider text-center dc-section color-change" id="dcsummary">
 				<div class="col-xs-12 offset-xs-0 emphasis">
 						<h4><strong>D/C Summary</strong></h4>
 						<div class="checkbox-icon output-dc-check-wrapper">
@@ -106,7 +107,7 @@
 	    <!-- bottom -->
 	    <div class="col-xs-12 divider text-center bottom-part nopadding">
 		    <!-- Medications -->
-		    <div class="color-change bottom-item col-xs-12 col-sm-4 emphasis ">
+		    <div class="color-change bottom-item col-xs-12 col-sm-4 emphasis" id="medications">
 						<div class="checkbox-icon output-medications-check-wrapper">
 							<img class="check-dc-small" src="check.png"> </img>
 						</div>
@@ -165,7 +166,7 @@
 
 
 		                <!-- Labs -->
-		    <div class="color-change bottom-item col-xs-12 col-sm-4 emphasis">
+		    <div class="color-change bottom-item col-xs-12 col-sm-4 emphasis" id="labs">
 						<h4><strong> Labs </strong></h4>
 						<div class="output-lab">
 							<div class="checkbox-icon output-medications-check-wrapper">
@@ -202,7 +203,7 @@
 		    </div>
 
 
-				<div class="color-change bottom-item col-xs-12 col-sm-4 emphasis">
+				<div class="color-change bottom-item col-xs-12 col-sm-4 emphasis" id="images">
 						<div class="checkbox-icon output-medications-check-wrapper">
 							<img class="check-dc-small" src="check.png"> </img>
 						</div>

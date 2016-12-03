@@ -1,5 +1,9 @@
 $(document).ready(function() {
-  $('.submit-button').click(function() {
+    $('.submit-button').click(function() {
+	if (ids.size < 4) {
+	    alert("To proceed, please sign off on all four pieces of information");
+	    return;
+	};
     console.log("button clicked");
     $.ajax({
       url: "/api",
@@ -18,4 +22,5 @@ $(document).ready(function() {
       console.log("AJAX POST request failed :(");
     });
   });
+    
 });

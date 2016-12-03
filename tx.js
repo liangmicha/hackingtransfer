@@ -1,18 +1,26 @@
-$(document).ready(function() {
-  var count = 0;
+var ids = new Set();
+var imported = false;
 
-  $('.color-change').click(function() {
-      $(this).css('background-color', '#006600');
-    $(this).css('color', '#FFFFFF');      
-    $(this).find('.checkbox-icon').show();
-    count = count + 1;
-    console.log(count);
-    if (count >= 4) {
+$(document).ready(function() {
+    var count = 0;
+    $('.color-change').click(function() {
+	if (imported) {
+	    $(this).css('background-color', '#006600');
+	    $(this).css('color', '#FFFFFF');      
+	    $(this).find('.checkbox-icon').show();
+	    ids.add($(this).attr('id'));
+	} else {
+	    alert("Please import data!");
+	}
+	
+
+    if (ids.size >= 4) {
       $('.submit-button').css('background-color', '#006600')
     }
   })
 
-  $('.import-button').click(function(){
+    $('.import-button').click(function(){
+	imported = true;
   	$('.output-dc').show();
     $('.dc_check_image').show();
     $('.output-med').show();
