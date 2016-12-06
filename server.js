@@ -105,8 +105,8 @@ app.post('/api', function(req, res) {
     url = req.protocol + '://' + req.get('host') + '/receiving.html?hash=' + rnd.toString();
     var c = new tmclient('anjalidatta', 'j78hZTKazcpoJPbCb4JtLsHJwd6Yh2');
     console.log(url);
-    //c.Messages.send({text: url, phones:'19492943766'}, function(err, res){
-    c.Messages.send({text: url, phones:'18172699548'}, function(err, res){
+    c.Messages.send({text: url, phones:'19492943766'}, function(err, res){
+    //c.Messages.send({text: url, phones:'18172699548'}, function(err, res){
        console.log('Messages.send()', err, res);
     });
     res.send("Hello");
