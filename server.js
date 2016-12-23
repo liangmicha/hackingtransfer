@@ -88,6 +88,7 @@ app.get('/submit.js', function(req, res) {
 
 // default route
 app.get('/', function(req, res) {
+    console.log(process.env.DEBUG, process.env.DEBUG=='0');
     res.sendFile(__dirname + '/tx2.html');
 });
 
@@ -114,6 +115,6 @@ app.get('/reception', function(req, res) {
     console.log(id);
 });
 
-PORT = 3772;
+PORT = 3793;
 app_new = app.listen(process.env.PORT||PORT);
 console.log("Server Running on ", PORT);
