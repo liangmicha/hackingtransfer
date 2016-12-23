@@ -60,15 +60,19 @@ app.get('/tx2.css', function(req, res) {
 });
 
 app.get('/receiving.html', function(req, res) {
+	delete_old_records();
         var num = globalhash[req.query.hash];
-	if (process.env.TXT_NOTIFY=='1') {
+	console.log(num);
+
+	if (process.env.TXT_NOTIFY=='1' && num != null) {
             c.Messages.send({text: 'Record ' + req.query.hash + ' accessed', phones:num}, function(err, res){
                console.log('Messages.send()', err, res);
             });
 	}
  
         console.log(globalhash);
-        res.sendFile(__dirname + '/receiving.html');
+	if (num != null) res.sendFile(__dirname + '/receiving.html');
+	else res.send('Record expired\n');
 
 });
 
