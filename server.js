@@ -9,9 +9,10 @@ app.use(bodyParser.json()); // Body parser use JSON data
 var globalhash = {};
 var globaltimestamp = {};
 var c = new tmclient(process.env.TXTUSERNAME, process.env.TXTPASSWORD);
+var TIMEOUT = 300; // in seconds before record expires
 
 function delete_old_records () {
-    var time_cutoff = Math.floor(Date.now() / 1000) - 120;
+    var time_cutoff = Math.floor(Date.now() / 1000) - TIMEOUT;
     // two mins cutoff
     Object.keys(globalhash).forEach(function(key) {
       if (globaltimestamp[key] < time_cutoff) {
@@ -52,6 +53,7 @@ app.get('/confirm.html', function(req, res) {
 });
 
 app.get('/tx2.html', function(req, res) {
+    delete_old_records();
     res.sendFile(__dirname + '/tx2.html');
 });
 
@@ -60,6 +62,10 @@ app.get('/tx2.css', function(req, res) {
 });
 
 app.get('/receiving.html', function(req, res) {
+    res.sendFile(__dirname + '/receiving.html');
+});
+
+app.get('/retrievehash', function(req, res) {
 	delete_old_records();
         var num = globalhash[req.query.hash];
 	console.log(num);
@@ -72,7 +78,7 @@ app.get('/receiving.html', function(req, res) {
  
         console.log(globalhash);
 	if (num != null) res.sendFile(__dirname + '/receiving.html');
-	else res.send('Record expired\n');
+	else res.send('Sorry! Record ' + req.query.hash + ' has expired.\n');
 
 });
 
@@ -116,7 +122,7 @@ app.post('/api', function(req, res) {
     globalhash[rnd] = req.body.id;
     globaltimestamp[rnd] = Math.floor(Date.now() / 1000);
 
-    url = req.protocol + '://' + req.get('host') + '/receiving.html?hash=' + rnd.toString();
+    url = req.protocol + '://' + req.get('host') + '/retrievehash?hash=' + rnd.toString();
     console.log(url);
     console.log(globaltimestamp[rnd], globaltimestamp[rnd] + 1);
 

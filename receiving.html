@@ -9,10 +9,12 @@
 	<link rel="stylesheet" type="text/css" href="bootstrap.css">
 	<link href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css" rel="stylesheet">
 	<script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.1.1.min.js"></script>
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.11.2/js/bootstrap-select.min.js"> </script>
-  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.11.2/css/bootstrap-select.min.css">
+	<script src="receiving.js"> </script>
+	
+	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.11.2/css/bootstrap-select.min.css">
 
 </head>
 
@@ -35,6 +37,34 @@
 	    </div>
 		</div>
   	<p>Transferred From <strong> Santa Clara Community Hospital </strong> </p>
+
+	<div class="row">
+	<div class="col-sm-12" id="doctorsgroup">
+	<p> Under the care of doctor(s): </p>
+
+		<div class="btn-group" id="doctors">
+		  <button class="btn btn-info"> Dr. Jenny Pan </button>
+		</div>
+	</div>
+	</div>
+        <br>
+	<div class="row">
+	<div class="col-sm-6">
+        </div>
+	<div class="col-sm-3">
+        <p> Add more doctors: </p>
+        </div>
+
+        <div class="col-sm-3">
+          <select class="selectpicker" onchange="myfunction()" id="doctoradd">
+	    <option>Select an option </option> 
+            <option>Dr. Matthews</option>
+            <option>Dr. Han</option>
+            <option>Dr. Roberts</option>
+          </select>
+	</div>
+	</div>
+	<br>
 	  <div class="panel-group" id="accordion">
 	    <div class="panel panel-default">
 	      <div class="panel-heading">
@@ -137,7 +167,6 @@
 			</div>
 	  </div>
 	</div>
-
 
 </body>
 
